@@ -4,12 +4,12 @@ import { Badge } from 'UI/Badge';
 import { Card } from 'UI/Card';
 import { Stack } from 'UI/Stack';
 
-import { selectFitlers } from 'store/filters/filter-selectors';
+import { selectFilters } from 'store/filters/filter-selectors';
 import { removeFilter, clearFilter } from 'store/filters/filter-actions';
 
 const FilterPanel = () => {
   const dispatch = useDispatch();
-  const currentFilters = useSelector(selectFitlers);
+  const currentFilters = useSelector(selectFilters);
 
   if (currentFilters.length === 0) {
     return null;
