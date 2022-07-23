@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMoon, IoMoonOutline } from 'react-icons/io5';
 
@@ -48,9 +48,9 @@ export const Header = () => {
           <Title>Where is the world?</Title>
           <ModeSwitcher>
             {theme === 'light' ? (
-              <IoMoonOutline size="14px" />
+              <IoMoonOutline size='14px' />
             ) : (
-              <IoMoon size="14px" />
+              <IoMoon size='14px' />
             )}{' '}
             <span style={{ marginLeft: '0.75rem' }}>{theme} Theme</span>
           </ModeSwitcher>
